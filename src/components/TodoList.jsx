@@ -19,7 +19,7 @@ const TodoList = () => {
     setTodo(todoValue.map(todo => todo.id===id ?{...todo,task,isEditing: !todo.isEditing} :todo))
   }
   return (
-    <div className="container bg-slate-200 mt-20 p-8 rounded-md w-[600px] ml-[500px]">
+    <div className="container shadow-lg bg-slate-200 mt-20 p-8 rounded-md w-full sm:w-[400px] md:w-[500px] lg:w-[600px] mx-auto md:mx-auto sm:mx-auto text-xl">
       <Form createTodo={createTodo} />
       {
         todoValue.map((todo)=>(

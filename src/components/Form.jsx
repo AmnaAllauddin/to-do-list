@@ -11,13 +11,13 @@ const Form = ({createTodo}) => {
     <form className="mb-4 font-primary w-full" onSubmit={handelSubmit}>
       <input
         type="text"
-        className="outline-none bg-transparent border border-gray-500 p-4 w-[400px] text-black mb-8 rounded
+        className="outline-none bg-transparent border border-gray-500 p-4 w-full sm:w-[200px] md:w-[300px] lg:w-[400px] text-black mb-8 rounded
         placeholder:text-black-500 mt-8 "
         placeholder="What task do you have today?"
         onChange={(e) => setvalue(e.target.value)}
         value={value}
       ></input>
-      <button className="bg-gray-700 border-none  p-2 w-32  text-white cursor-pointer rounded ml-2">
+      <button className="bg-gray-700 border-none  shadow-xl p-3 w-32  text-white cursor-pointer rounded ml-2">
         Add task
       </button>
     </form>
