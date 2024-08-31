@@ -12,7 +12,7 @@ const Edit = ({ editTodo,task }) => {
     <form className="mb-4 font-primary w-full" onSubmit={handelSubmit}>
       <input
         type="text"
-        className="outline-none bg-transparent border border-gray-500 p-4 w-[400px] text-black mb-8 rounded
+        className="outline-none bg-transparent border border-gray-500 p-4 w-full sm:w-[200px] md:w-[300px] lg:w-[400px] text-black mb-8 rounded
         placeholder:text-black-500 "
         placeholder="Update Task"
         onChange={(e) => setvalue(e.target.value)}
